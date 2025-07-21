@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Buyzoid",
+    "category": "fullStack",
+    "description": "A full-stack e-commerce app with features like add to cart, user authentication via Firebase.",
+    "site": "",
+    "github": "https://github.com/gaurav4516/Buyzoid",
+    "image": "trailed.png",
+    "alt": "Buyzoid - Full-stack e-commerce app with cart features and Firebase authentication"
+  },
+
+  {
+    "name": "Odisha Unexplored",
+    "category": "frontend",
+    "description": "Discover Hidden Pateerns of Odisha  ",
+    "site": "https://odisha-unexplored.vercel.app/",
+    "github": "https://github.com/gaurav4516/Odisha-Unexplored.git",
+    "image": "daringabadi.jpg",
+    "alt": "Odisha Unexplored - Explore tribal cultures, ancient traditions, and untouched landscapes"
+  },
+ 
+ {
+  "name": "RecipeX",
+  "category": "fullstack",
+  "description": "RecipeX is a full-stack web application where users can register, log in, and share their favorite recipes. It features a modern UI, secure authentication, and real-time recipe storage using MongoDB.",
+  "features": [
+    "User registration and login with validation",
+    "Responsive UI built with React and CSS",
+    "Secure backend using Node.js, Express, and MongoDB",
+    "Recipe submission form with image and ingredient inputs",
+    "Real-time data storage and retrieval",
+    "Glassmorphism-styled recipe cards",
+    "Dynamic navigation bar and route protection"
+  ],
+  "techStack": [
+    "React",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "CSS3",
+    "Vite"
+  ],
+  "site": "",
+  "github": "https://github.com/gaurav4516/RecipeX",
+  "image": "receipex.png",
+  "alt": "RecipeX - Full-stack recipe sharing platform with login and recipe submission"
+},
+
+  {
+    "name": "Zoro.to",
+    "category": "uiUX",
+    "description": "UI/UX design for a mobile app interface using Figma.",
+    "site": "https://www.figma.com/proto/mKxES2Uumu51L7sVgOOdp1/Webd?page-id=1%3A398&node-id=1-400&viewport=454%2C997%2C0.36&t=JHVSjHan3mMLZaYV-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A400",
+    "github": "",
+    "image": "zoro.png",
+    "alt": "Zoro.to - UI/UX design for mobile app interface using Figma"
+  }
+ 
+]
