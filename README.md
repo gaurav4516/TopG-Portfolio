@@ -33,7 +33,7 @@ This is my personal developer portfolio to showcase my:
 
 | Home Section | Projects Section | Certifications |
 |--------------|------------------|----------------|
-| ![Home](./src/assets/images/gaun.jpg) | ![Projects](./src/assets/images/projects/trailed.png) | ![Certifications](./public/javascript.pdf) |
+| ![Home](./src/assets/images/daringabadi.jpg) | ![Projects](./src/assets/images/projects/trailed.png) |
 
 ---
 
