@@ -10,7 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-primary text-white py-4 shadow-lg fixed w-full z-50">
+    <nav
+      className="text-white py-4 shadow-lg fixed w-full z-50"
+      style={{ backgroundColor: "rgb(93, 126, 158)" }}
+    >
       <div className="container mx-auto flex items-center justify-between px-6">
         {/* Logo */}
         <div className="text-2xl font-bold cursor-pointer">
@@ -24,83 +27,34 @@ const Navbar = () => {
           <button
             className="text-white text-2xl focus:outline-none"
             onClick={toggleMenu}
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             {isOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>
 
         {/* Menu Items */}
         <div
-          className={`absolute top-16 left-0 w-full bg-primary text-white lg:static lg:flex lg:items-center lg:space-x-8 lg:w-auto ${
+          className={`absolute top-16 left-0 w-full text-white lg:static lg:flex lg:items-center lg:space-x-8 lg:w-auto ${
             isOpen ? "block" : "hidden"
-          }`}>
+          }`}
+          style={{ backgroundColor: "rgb(93, 126, 158)" }}
+        >
           <ul className="flex flex-col lg:flex-row lg:space-x-8 text-center">
-            <li className="py-2 lg:py-0">
-              <Link
-                to="home"
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="block hover:text-secondary cursor-pointer transition duration-300"
-                onClick={() => setIsOpen(false)}>
-                Home
-              </Link>
-            </li>
-            <li className="py-2 lg:py-0">
-              <Link
-                to="about"
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="block hover:text-secondary cursor-pointer transition duration-300"
-                onClick={() => setIsOpen(false)}>
-                About
-              </Link>
-            </li>
-            <li className="py-2 lg:py-0">
-              <Link
-                to="projects"
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="block hover:text-secondary cursor-pointer transition duration-300"
-                onClick={() => setIsOpen(false)}>
-                Projects
-              </Link>
-            </li>
-            <li className="py-2 lg:py-0">
-              <Link
-                to="resume"
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="block hover:text-secondary cursor-pointer transition duration-300"
-                onClick={() => setIsOpen(false)}>
-                Resume
-              </Link>
-            </li>
-             <li className="py-2 lg:py-0">
-              <Link
-                to="certifications"
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="block hover:text-secondary cursor-pointer transition duration-300"
-                onClick={() => setIsOpen(false)}>
-                Certifications
-              </Link>
-            </li>
-            <li className="py-2 lg:py-0">
-              <Link
-                to="contact"
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="block hover:text-secondary cursor-pointer transition duration-300"
-                onClick={() => setIsOpen(false)}>
-                Contact
-              </Link>
-            </li>
+            {["home", "about", "projects", "resume", "certifications", "contact"].map((section) => (
+              <li key={section} className="py-2 lg:py-0">
+                <Link
+                  to={section}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  className="block hover:text-teal-300 cursor-pointer transition duration-300"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

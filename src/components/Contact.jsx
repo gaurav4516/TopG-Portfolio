@@ -1,155 +1,61 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React from "react";
 
 const Contact = () => {
-  const form = useRef();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [status, setStatus] = useState("");
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_ec5y0ts", // Your EmailJS service ID
-        "template_7hksf65", // Your EmailJS template ID
-        form.current,
-        "Y-hkeCmmRiuid1AiS" // Your EmailJS public key
-      )
-      .then(
-        () => {
-          setStatus("✅ Message Sent Successfully!");
-          setFormData({ name: "", email: "", message: "" });
-        },
-        () => {
-          setStatus("❌ Error Sending Message. Please try again.");
-        }
-      );
-  };
-
   return (
-    <section id="contact" className="py-20 bg-light-gray">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-primary mb-6">Contact Me</h2>
-          <p className="text-lg text-secondary">
-            Feel free to reach out for any inquiries or collaboration
-            opportunities!
-          </p>
-        </div>
+    <section id="contact" className="py-16 bg-white text-black">
+      <div className="container mx-auto px-4 max-w-2xl">
+        <h2 className="text-4xl font-bold text-center mb-8 text-[#5d7e9e]">
+          Contact Me
+        </h2>
 
-        {/* Contact Form */}
-        <div className="flex justify-center">
-          <div className="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-lg">
-            <form ref={form} onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label
-                  htmlFor="name"
-                  className="block text-xl font-medium text-secondary mb-2"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-              </div>
-
-              <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block text-xl font-medium text-secondary mb-2"
-                >
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-              </div>
-
-              <div className="mb-4">
-                <label
-                  htmlFor="message"
-                  className="block text-xl font-medium text-secondary mb-2"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="5"
-                  className="w-full px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-primary text-white py-3 rounded-md hover:bg-secondary transition duration-300"
-              >
-                Send Message
-              </button>
-
-              {status && (
-                <p className="mt-4 text-center text-lg text-secondary">
-                  {status}
-                </p>
-              )}
-            </form>
+        <form
+          action="https://formspree.io/f/yourFormID" // Replace with your form handling endpoint
+          method="POST"
+          className="bg-white p-8 rounded-lg shadow-lg space-y-6 border"
+        >
+          <div>
+            <label className="block mb-2 font-semibold text-[#5d7e9e]">
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              required
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#5d7e9e]"
+            />
           </div>
-        </div>
 
-        {/* Contact Info */}
-        <div className="text-center mt-12">
-          <h3 className="text-2xl font-semibold text-primary mb-4">
-            Or reach me at
-          </h3>
-          <p className="text-lg">
-            Email:{" "}
-            <a
-              href="mailto:gaurav4516@gmail.com"
-              className="text-primary underline"
-            >
-              gauravsingh88@gmail.com
-            </a>
-          </p>
-          <p className="mt-4">
-            <a
-              href="/45resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg text-primary underline hover:text-secondary transition duration-300"
-            >
-              View My Resume
-            </a>
-          </p>
-        </div>
+          <div>
+            <label className="block mb-2 font-semibold text-[#5d7e9e]">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              required
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#5d7e9e]"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-2 font-semibold text-[#5d7e9e]">
+              Message
+            </label>
+            <textarea
+              name="message"
+              rows="5"
+              required
+              className="w-full px-4 py-2 border rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-[#5d7e9e]"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-[#5d7e9e] text-white font-bold py-2 px-6 rounded-md hover:bg-[#4d6e8e] transition"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   );

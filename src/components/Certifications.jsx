@@ -25,10 +25,10 @@ const Certifications = () => {
   return (
     <section
       id="certifications"
-      className="py-20 px-4 bg-[#f8fafc] text-center scroll-mt-20"
+      className="py-20 px-4 bg-white text-center scroll-mt-20"
     >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-primary mb-12">
+        <h2 className="text-4xl font-bold text-[#5d7e9e] mb-12">
           Certifications
         </h2>
 
@@ -36,9 +36,9 @@ const Certifications = () => {
           {certificationList.map((cert, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow-md border-t-4 border-primary p-6 hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-2xl shadow-md border-t-4 border-[#5d7e9e] p-6 hover:shadow-xl transition-shadow duration-300"
             >
-              <h3 className="text-xl font-semibold text-secondary mb-2">
+              <h3 className="text-xl font-semibold text-[#5d7e9e] mb-2">
                 {cert.title}
               </h3>
               <p className="text-gray-700 font-medium">{cert.issuer}</p>
@@ -47,7 +47,7 @@ const Certifications = () => {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary underline font-semibold hover:text-secondary transition"
+                className="text-[#5d7e9e] underline font-semibold hover:text-gray-800 transition"
               >
                 View Certificate
               </a>
