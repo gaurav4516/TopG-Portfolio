@@ -29,9 +29,10 @@ const About = () => {
                 I love building user-friendly and responsive web interfaces using <strong>HTML, CSS, JavaScript, and React</strong>.
               </p>
               <p className="mb-4 text-justify">
-                I've created projects like a tourism blog site <strong>"Odisha Unexplored"</strong> and a recipe website <strong>"RecipeX"</strong> with user authentication and MongoDB integration.
-                I enjoy turning ideas into visually appealing and functional digital products.
+                I've created projects like a tourism blog site <strong>"Odisha Unexplored"</strong>, a recipe website <strong>"RecipeX"</strong> with user authentication and MongoDB integration, and an e-commerce platform <strong>"Buyzoid"</strong>, which includes product browsing, cart management, checkout flow, and backend order handling with MongoDB.
+                I enjoy turning ideas into visually appealing and functional digital products, focusing on seamless, user-friendly web experiences.
               </p>
+
               <p className="mb-4 text-justify">
                 I’m always learning — currently exploring <strong>Node.js</strong>, <strong>MongoDB</strong>, and building full-stack apps.
                 I also enjoy comparing data science algorithms and building dashboards with tools like Power BI.
