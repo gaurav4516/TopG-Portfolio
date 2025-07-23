@@ -3,7 +3,7 @@
     "name": "Buyzoid",
     "category": "fullStack",
     "description": "A full-stack e-commerce app with features like add to cart, user authentication via Firebase.",
-    "site": "",
+    "site": "https://buyzoid.vercel.app/",
     "github": "https://github.com/gaurav4516/Buyzoid",
     "image": "trailed.png",
     "alt": "Buyzoid - Full-stack e-commerce app with cart features and Firebase authentication"
