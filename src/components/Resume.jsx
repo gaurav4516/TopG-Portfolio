@@ -32,7 +32,7 @@ const Resume = () => {
                 <ul className="list-disc pl-6 text-gray-700 space-y-2">
                   <li>ReactJS, Node.js</li>
                   <li>HTML5, CSS3, JavaScript </li>
-                  <li>Git, GitHub, REST APIs</li>
+                  
                   <li>Database: MongoDB, MySQL (basic)</li>
                   <li>Basic Data Structure Algorithm</li>
                 </ul>
