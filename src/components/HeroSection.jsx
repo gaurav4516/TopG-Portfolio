@@ -28,7 +28,7 @@ const HeroSection = () => {
               className="inline-block px-6 py-3 bg-[rgb(93,126,158)] text-white rounded-lg shadow-md hover:bg-white hover:text-[rgb(93,126,158)] hover:border hover:border-[rgb(93,126,158)] transition-all duration-300"
               title="Download Resume"
             >
-              Download Resume
+               Get Resume
             </a>
           </div>
 

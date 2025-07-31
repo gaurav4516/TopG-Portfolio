@@ -71,19 +71,25 @@ const Resume = () => {
               <div>
                 <h3 className="text-2xl font-semibold mb-4" style={{ color: "#333333" }}>Certifications</h3>
                 <ul className="list-disc pl-6 text-gray-700 space-y-2">
+                   <li>
+                    <a href="/GAURAV.pdf" target="_blank" rel="noopener noreferrer" style={{ color: primaryColor }} className="hover:underline">
+                      Data Science Internship – Prinston Smart Engineers (Mar–May 2025)
+                    </a>
+                  </li>
                   <li>
                     <a href="/react.pdf" target="_blank" rel="noopener noreferrer" style={{ color: primaryColor }} className="hover:underline">
                       React JS Tutorial – Cuvette (July 2025)
                     </a>
                   </li>
                   <li>
-                    <a href="/javascript.pdf" target="_blank" rel="noopener noreferrer" style={{ color: primaryColor }} className="hover:underline">
-                      Introduction to JavaScript – Cuvette (July 2025)
+                    <a href="/Tata.pdf" target="_blank" rel="noopener noreferrer" style={{ color: primaryColor }} className="hover:underline">
+                     GenAI Powered Data Analytics Job Simulation  – Tata & Forage (30 July 2025)
                     </a>
                   </li>
+                 
                   <li>
-                    <a href="/GAURAV.pdf" target="_blank" rel="noopener noreferrer" style={{ color: primaryColor }} className="hover:underline">
-                      Data Science Internship – Prinston Smart Engineers (Mar–May 2025)
+                    <a href="/jpmg.pdf" target="_blank" rel="noopener noreferrer" style={{ color: primaryColor }} className="hover:underline">
+                      Software Engineering Job Simulation -  JP Morgan Chase & Co. (31 July 2025)
                     </a>
                   </li>
                 </ul>

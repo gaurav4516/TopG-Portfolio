@@ -2,11 +2,13 @@ import React from "react";
 
 const Certifications = () => {
   const certificationList = [
+   
+    
     {
-      title: "React JS Tutorial",
-      issuer: "Cuvette",
-      date: "July 2025",
-      link: "/react.pdf", // Place in public folder
+      title: "Data Science Internship",
+      issuer: "Prinston Smart Engineers",
+      date: "March 2025 - May 2025",
+      link: "/GAURAV.pdf",
     },
     {
       title: "Introduction to JavaScript",
@@ -14,12 +16,25 @@ const Certifications = () => {
       date: "July 2025",
       link: "/javascript.pdf",
     },
-    {
-      title: "Data Science Internship",
-      issuer: "Prinston Smart Engineers",
-      date: "March 2025 - May 2025",
-      link: "/GAURAV.pdf",
+     {
+      title: "React JS Tutorial",
+      issuer: "Cuvette",
+      date: "July 2025",
+      link: "/react.pdf", // Place in public folder
     },
+     {
+      title: "GenAI Powered Data Analytics Job Simulation",
+      issuer: "By:- Tata & Forage",
+      date: " 30 July 2025",
+      link: "/Tata.pdf", // Place in public folder
+    },
+     {
+      title: "Software Engineering Job Simulation",
+      issuer: " By:- JP Morgan Chase & Co. & Forage",
+      date: " 31 July 2025",
+      link: "/jpmg.pdf", // Place in public folder
+    },
+
   ];
 
   return (

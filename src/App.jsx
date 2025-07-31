@@ -8,7 +8,7 @@ import Projects from "./components/Projects.jsx";
 import Resume from "./components/Resume.jsx";
 import Certifications from "./components/Certifications";
 import Skill from "./components/Skill.jsx";
-import Contact from "./components/Contact.jsx";
+
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <Projects />
       <Resume/>
       <Certifications/>
-      <Contact />
+      
       <Footer />
     </>
   );

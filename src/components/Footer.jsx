@@ -41,6 +41,12 @@ const Footer = () => {
             className="hover:text-white underline underline-offset-2"
           >
             Gaurav Singh
+          </a> <br />
+          <a
+            href="./45resume.pdf"
+            className="hover:text-white underline underline-offset-2"
+          >
+            View Resume
           </a>
         </p>
       </div>
